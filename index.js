@@ -1,5 +1,4 @@
 var output;
-
 function myFunction() {
 	var base_description = document.getElementById("base_description").value;
 	var pre_description = " &#92;n &lt;TEAM_NONE&gt; &#92;n &#92;n " + document.getElementById("pre_description").value + "&lt;/TEAM&gt;";
