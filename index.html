@@ -1,56 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	</head>
-<body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<h3>Basic</h3>
+<!DOCTYPE html><html><head></head><body>
 <p>Always on top desciption</p>
 <input type="text" id="base_description" value="">
 <p>Pre Team Selection</p>
 <input type="text" id="pre_description" value="">
-
-<br> <h3>Red Team</h3>
-<p>Desciption</p>
+<p>Red Desciption</p>
 <input type="text" id="red_description" value="">
-<p>Planes</p>
-<input type="text" id="rpl" value=""><p>Pilots</p>
-<input type="text" id="rpi" value="">
-
-<br> <h3>Blue Team</h3>
-<p>Description</p>
-<input type="text" id="blue_description" value=""> <p>Planes</p>
-<input type="text" id="bpl" value=""><p>Pilots</p>
-<input type="text" id="bpi" value="">
-
+<p>Blue Team Description</p>
+<input type="text" id="blue_description" value="">
 <button onclick="myFunction()">Try it</button>
-
-<h3>Output</h3><br>
-<p id="a" >
+<p id="a">Description  \n &lt;TEAM_NONE&gt; \n \n NaN&lt;/TEAM&gt;\n&lt;TEAM_BLUE&gt;\n \n &lt;/TEAM&gt;&lt;ARMY FBD&gt;\nBlue=30:30:0:0:0:0:0:0:1=IGNORE.mis\nRed=30:30:0:0:0:0:0:0:1=IGNORE.mis\nTimeLimit=60:None:test1.mis\ncom=chat JeagerOne: JG52 Sponsored Server\ncom=chat Enjoy Flying\n&lt;/ARMY FBD&gt;\n
 </p>
 <script>
- function myFunction() {
-   var base_description = document.getElementById("base_description").value;
-
-   var pre_description = " &#92;n &lt;TEAM_NONE&gt; &#92;n &#92;n " +document.getElementById("pre_description").value; +"&lt;/TEAM&gt;"
-
-   var blue_description =  "&#92;n&lt;TEAM_BLUE&gt;&#92;n &#92;n " + document.getElementById("blue_description").value + "&lt;/TEAM&gt;";
-
-   var red_description = "&#92;n &lt;TEAM_RED&gt; &#92;n &#92;n " +document.getElementById("red_description").value + "&lt;/TEAM&gt;";
-   var rpl = document.getElementById("rpl").value 
-   var rpi = document.getElementById("rpi").value 
-
-   var bpl = document.getElementById("bpl").value 
-   var bpi = document.getElementById("bpi").value 
-
-
-    document.getElementById("a").innerHTML = "Description " + base_description + pre_description + red_description + blue_description + "&lt;ARMY FBD&gt;&#92;nBlue=" + bpl + ":" +bpi + ":0:0:0:0:0:0:1=IGNORE.mis&#92;nRed="+ bpl + ":" +bpi + ":0:0:0:0:0:0:1=IGNORE.mis&#92;nTimeLimit=60:None:test1.mis&#92;ncom=chat JeagerOne: JG52 Sponsored Server&#92;ncom=chat Enjoy Flying&#92;n&lt;/ARMY FBD&gt;&#92;n&#10;"
+function myFunction() {
+var base_description = document.getElementById("base_description").value;
+var pre_description = " &#92;n &lt;TEAM_NONE&gt; &#92;n &#92;n " +document.getElementById("pre_description").value; +"&lt;/TEAM&gt;"
+var blue_description = document.getElementById("blue_description").value;
+var red_description = document.getElementById("red_description").value;
+document.getElementById("a").innerHTML = "Description " + base_description + pre_description +  + "&#92;n &lt;TEAM_RED&gt; &#92;n &#92;n " + red_description + "&lt;/TEAM&gt;"+"&#92;n&lt;TEAM_BLUE&gt;&#92;n &#92;n " + blue_description + "&lt;/TEAM&gt;"+"&lt;ARMY FBD&gt;&#92;nBlue=30:30:0:0:0:0:0:0:1=IGNORE.mis&#92;nRed=30:30:0:0:0:0:0:0:1=IGNORE.mis&#92;nTimeLimit=60:None:test1.mis&#92;ncom=chat JeagerOne: JG52 Sponsored Server&#92;ncom=chat Enjoy Flying&#92;n&lt;/ARMY FBD&gt;&#92;n&#10;"
 }
 </script>
-
-</body>
-</html>
+</body></html>
