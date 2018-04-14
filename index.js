@@ -22,10 +22,10 @@ function copyToClipboard(output) {
 function myFunction() {
 	//Basic
     var base_description = document.getElementById("base_description").value;
-    var pre_description = " &#92;n&lt;TEAM_NONE&gt;&#92;n &#92;n" + document.getElementById("pre_description").value + "&lt;/TEAM&gt;";
+    var pre_description = " &#92;n&lt;ARMY NONE&gt;&#92;n &#92;n" + document.getElementById("pre_description").value + "&lt;/ARMY&gt;";
     
     //Red
-    var red_description = "&#92;n&lt;TEAM_RED&gt;&#92;n&#92;n " + document.getElementById("red_description").value + "&lt;/TEAM&gt;";
+    var red_description = "&#92;n&lt;ARMY RED&gt;&#92;n&#92;n " + document.getElementById("red_description").value + "&lt;/ARMY&gt;";
     var red_planes = document.getElementById("rpl").value;
     var red_pilots = document.getElementById("rpi").value;
     var red_tanks = document.getElementById("rtank").value;
@@ -37,7 +37,7 @@ function myFunction() {
     //Blue
     var blue_planes = document.getElementById("bpl").value;
     var blue_pilots = document.getElementById("bpi").value;
-    var blue_description = "&#92;n&lt;TEAM_BLUE&gt;&#92;n &#92;n " + document.getElementById("blue_description").value + "&lt;/TEAM&gt;";
+    var blue_description = "&#92;n&lt;ARMY BLUE&gt;&#92;n &#92;n " + document.getElementById("blue_description").value + "&lt;/ARMY&gt;";
     var blue_tanks = document.getElementById("btank").value;
     var blue_wagons = document.getElementById("bwagons").value;
     var blue_ships = document.getElementById("bship").value;
