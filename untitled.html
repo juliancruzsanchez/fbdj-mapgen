@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<title>IL2 Desciption Generator</title>
+	</head>
+	<body>
+		<script src="https://raw.githubusercontent.com/mathiasbynens/he/master/he.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<div id="main">
+		<center>
+		<h3>Basic</h3>
+		<p>Always on top desciption</p>
+		<textarea rows="4" cols="50" type="text" id="base_description" value=""></textarea>
+		<p>Pre Team Selection</p>
+		<textarea  rows="4" cols="50" type="text" id="pre_description" value=""></textarea>
+		<br> <h3>Red Team</h3>
+		<p>Desciption</p>
+		<textarea  rows="4" cols="50" id="red_description" value=""></textarea>
+		<p>Planes</p>
+		<input type="text" id="rpl" value=""><p>Pilots</p>
+		<input type="text" id="rpi" value=""><br>
+		<p>Catagories to Win</p> <input id="rtargets" type="number" min="1" max="100" value="1">
+		<br> <h3>Blue Team</h3>
+		<p>Description</p>
+		<textarea  rows="4" cols="50" type="text" id="blue_description" value=""></textarea> <p>Planes</p>
+		<input id="bpl" type="number" min="1" max="100" value="1">
+		<p>Pilots</p>
+		<input id="bpi" type="number" min="1" max="100" value="1">
+		<p>Catagories to Win</p> <input id="btargets" type="number" min="1" max="100" value="1">
+		<br>
+		<button onclick="myFunction()">Generate Description</button>
+		</center>
+	</div>
+		<script>
+			document.getElementById("main").style.visibility = "visible";
+			var output;
+			function myFunction() {
+				var base_description = document.getElementById("base_description").value;
+				var pre_description = " &#92;n &lt;TEAM_NONE&gt; &#92;n &#92;n " +document.getElementById("pre_description").value; +"&lt;/TEAM&gt;"
+				var blue_description =  "&#92;n&lt;TEAM_BLUE&gt;&#92;n &#92;n " + document.getElementById("blue_description").value + "&lt;/TEAM&gt;";
+				var red_description = "&#92;n &lt;TEAM_RED&gt; &#92;n &#92;n " +document.getElementById("red_description").value + "&lt;/TEAM&gt;";
+				var rpl = document.getElementById("rpl").value
+				var rpi = document.getElementById("rpi").value
+				var bpl = document.getElementById("bpl").value
+				var bpi = document.getElementById("bpi").value
+				var rtargets = document.getElementById("rtargets").value
+				var btargets = document.getElementById("btargets").value
+				
+				output = "Description " + base_description + pre_description + red_description + blue_description + "&lt;ARMY FBD&gt;&#92;nBlue=" + bpl + ":" +bpi + ":0:0:0:0:0:0:"+ rtargets +"=IGNORE.mis&#92;nRed="+ bpl + ":" +bpi + ":0:0:0:0:0:0:"+btargets+"=IGNORE.mis&#92;nTimeLimit=60:None:test1.mis&#92;ncom=chat JeagerOne: JG52 Sponsored Server&#92;ncom=chat Enjoy Flying&#92;n&lt;/ARMY FBD&gt;&#92;n&#10;"
+				copyToClipboard(output);
+			}
+			
+			function htmlDecode(input){
+				var e = document.createElement('div');
+				e.innerHTML = input;
+				// handle case of empty input
+				return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+			}
+			
+			function copyToClipboard(output) {
+				window.prompt("Copy to clipboard: Ctrl+C, Enter", htmlDecode(output));
+			}
+
+		</script>
+
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "veltro66") {
+alert('You Got it Right!');
+document.getElementById("main").style.visibility = "block";
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+passWord();
+</SCRIPT>
+<CENTER>
+</CENTER>
+	</body>
+</html>
