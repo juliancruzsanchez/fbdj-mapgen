@@ -10,47 +10,67 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 		<div id="main">
-			<center>
-			<h3>Basic</h3>
-			<p>Always on top desciption</p>
-			<textarea rows="4" cols="50" type="text" id="base_description" value=""></textarea>
-			<p>Pre Team Selection</p>
-			<textarea  rows="4" cols="50" type="text" id="pre_description" value=""></textarea>
-			<br> <h3>Red Team</h3>
-			<p>Desciption</p>
-			<textarea  rows="4" cols="50" id="red_description" value=""></textarea>
-			<p>Planes</p>
-			<input type="text" id="rpl" value=""><p>Pilots</p>
-			<input type="text" id="rpi" value=""><br>
-			<p>Catagories to Win</p> <input id="rtargets" type="number" min="1" max="100" value="1">
-			<br> <h3>Blue Team</h3>
-			<p>Description</p>
-			<textarea  rows="4" cols="50" type="text" id="blue_description" value=""></textarea> <p>Planes</p>
-			<input id="bpl" type="number" min="1" max="100" value="1">
-			<p>Pilots</p>
-			<input id="bpi" type="number" min="1" max="100" value="1">
-			<p>Catagories to Win</p> <input id="btargets" type="number" min="1" max="100" value="1">
-			<br>
-			<button onclick="myFunction()">Generate Description</button>
-			</center>
-			
-			<script>
-			var _0xf9d8=['\x20\x26\x23\x39\x32\x3b\x6e\x20\x26\x6c\x74\x3b\x54\x45\x41\x4d\x5f\x4e\x4f\x4e\x45\x26\x67\x74\x3b\x20\x26\x23\x39\x32\x3b\x6e\x20\x26\x23\x39\x32\x3b\x6e\x20','\x70\x72\x65\x5f\x64\x65\x73\x63\x72\x69\x70\x74\x69\x6f\x6e','\x26\x6c\x74\x3b\x2f\x54\x45\x41\x4d\x26\x67\x74\x3b','\x26\x23\x39\x32\x3b\x6e\x26\x6c\x74\x3b\x54\x45\x41\x4d\x5f\x42\x4c\x55\x45\x26\x67\x74\x3b\x26\x23\x39\x32\x3b\x6e\x20\x26\x23\x39\x32\x3b\x6e\x20','\x62\x6c\x75\x65\x5f\x64\x65\x73\x63\x72\x69\x70\x74\x69\x6f\x6e','\x26\x23\x39\x32\x3b\x6e\x20\x26\x6c\x74\x3b\x54\x45\x41\x4d\x5f\x52\x45\x44\x26\x67\x74\x3b\x20\x26\x23\x39\x32\x3b\x6e\x20\x26\x23\x39\x32\x3b\x6e\x20','\x72\x65\x64\x5f\x64\x65\x73\x63\x72\x69\x70\x74\x69\x6f\x6e','\x72\x70\x6c','\x62\x70\x6c','\x62\x70\x69','\x72\x74\x61\x72\x67\x65\x74\x73','\x62\x74\x61\x72\x67\x65\x74\x73','\x44\x65\x73\x63\x72\x69\x70\x74\x69\x6f\x6e\x20','\x3a\x30\x3a\x30\x3a\x30\x3a\x30\x3a\x30\x3a\x30\x3a','\x3d\x49\x47\x4e\x4f\x52\x45\x2e\x6d\x69\x73\x26\x23\x39\x32\x3b\x6e\x52\x65\x64\x3d','\x3d\x49\x47\x4e\x4f\x52\x45\x2e\x6d\x69\x73\x26\x23\x39\x32\x3b\x6e\x54\x69\x6d\x65\x4c\x69\x6d\x69\x74\x3d\x36\x30\x3a\x4e\x6f\x6e\x65\x3a\x74\x65\x73\x74\x31\x2e\x6d\x69\x73\x26\x23\x39\x32\x3b\x6e\x63\x6f\x6d\x3d\x63\x68\x61\x74\x20\x4a\x65\x61\x67\x65\x72\x4f\x6e\x65\x3a\x20\x4a\x47\x35\x32\x20\x53\x70\x6f\x6e\x73\x6f\x72\x65\x64\x20\x53\x65\x72\x76\x65\x72\x26\x23\x39\x32\x3b\x6e\x63\x6f\x6d\x3d\x63\x68\x61\x74\x20\x45\x6e\x6a\x6f\x79\x20\x46\x6c\x79\x69\x6e\x67\x26\x23\x39\x32\x3b\x6e\x26\x6c\x74\x3b\x2f\x41\x52\x4d\x59\x20\x46\x42\x44\x26\x67\x74\x3b\x26\x23\x39\x32\x3b\x6e\x26\x23\x31\x30\x3b','\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64','\x62\x61\x73\x65\x5f\x64\x65\x73\x63\x72\x69\x70\x74\x69\x6f\x6e','\x76\x61\x6c\x75\x65'];(function(_0x3a273a,_0x2954fc){var _0x382d93=function(_0x5442ee){while(--_0x5442ee){_0x3a273a['\x70\x75\x73\x68'](_0x3a273a['\x73\x68\x69\x66\x74']());}};_0x382d93(++_0x2954fc);}(_0xf9d8,0x19f));var _0x8f9d=function(_0x45efdb,_0x2bcd08){_0x45efdb=_0x45efdb-0x0;var _0x526e92=_0xf9d8[_0x45efdb];return _0x526e92;};var base_description=document[_0x8f9d('0x0')](_0x8f9d('0x1'))[_0x8f9d('0x2')];var pre_description=_0x8f9d('0x3')+document[_0x8f9d('0x0')](_0x8f9d('0x4'))[_0x8f9d('0x2')];+_0x8f9d('0x5');var blue_description=_0x8f9d('0x6')+document[_0x8f9d('0x0')](_0x8f9d('0x7'))[_0x8f9d('0x2')]+'\x26\x6c\x74\x3b\x2f\x54\x45\x41\x4d\x26\x67\x74\x3b';var red_description=_0x8f9d('0x8')+document[_0x8f9d('0x0')](_0x8f9d('0x9'))[_0x8f9d('0x2')]+_0x8f9d('0x5');var rpl=document[_0x8f9d('0x0')](_0x8f9d('0xa'))['\x76\x61\x6c\x75\x65'];var rpi=document['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']('\x72\x70\x69')[_0x8f9d('0x2')];var bpl=document[_0x8f9d('0x0')](_0x8f9d('0xb'))[_0x8f9d('0x2')];var bpi=document[_0x8f9d('0x0')](_0x8f9d('0xc'))[_0x8f9d('0x2')];var rtargets=document[_0x8f9d('0x0')](_0x8f9d('0xd'))[_0x8f9d('0x2')];var btargets=document[_0x8f9d('0x0')](_0x8f9d('0xe'))[_0x8f9d('0x2')];output=_0x8f9d('0xf')+base_description+pre_description+red_description+blue_description+'\x26\x6c\x74\x3b\x41\x52\x4d\x59\x20\x46\x42\x44\x26\x67\x74\x3b\x26\x23\x39\x32\x3b\x6e\x42\x6c\x75\x65\x3d'+bpl+'\x3a'+bpi+_0x8f9d('0x10')+rtargets+_0x8f9d('0x11')+bpl+'\x3a'+bpi+_0x8f9d('0x10')+btargets+_0x8f9d('0x12');copyToClipboard(output);
+		<center>
+		<h3>Basic</h3>
+		<p>Always on top desciption</p>
+		<textarea rows="4" cols="50" type="text" id="base_description" value=""></textarea>
+		<p>Pre Team Selection</p>
+		<textarea  rows="4" cols="50" type="text" id="pre_description" value=""></textarea>
+		<br> <h3>Red Team</h3>
+		<p>Desciption</p>
+		<textarea  rows="4" cols="50" id="red_description" value=""></textarea>
+		<p>Planes</p>
+		<input type="text" id="rpl" value=""><p>Pilots</p>
+		<input type="text" id="rpi" value=""><br>
+		<p>Catagories to Win</p> <input id="rtargets" type="number" min="1" max="100" value="1">
+		<br> <h3>Blue Team</h3>
+		<p>Description</p>
+		<textarea  rows="4" cols="50" type="text" id="blue_description" value=""></textarea> <p>Planes</p>
+		<input id="bpl" type="number" min="1" max="100" value="1">
+		<p>Pilots</p>
+		<input id="bpi" type="number" min="1" max="100" value="1">
+		<p>Catagories to Win</p> <input id="btargets" type="number" min="1" max="100" value="1">
+		<br>
+		<button onclick="myFunction()">Generate Description</button>
+		</center>
+	</div>
+		<script>
+			document.getElementById("main").style.visibility = "visible";
+			var output;
+			function myFunction() {
+				var base_description = document.getElementById("base_description").value;
+				var pre_description = " &#92;n &lt;TEAM_NONE&gt; &#92;n &#92;n " +document.getElementById("pre_description").value; +"&lt;/TEAM&gt;"
+				var blue_description =  "&#92;n&lt;TEAM_BLUE&gt;&#92;n &#92;n " + document.getElementById("blue_description").value + "&lt;/TEAM&gt;";
+				var red_description = "&#92;n &lt;TEAM_RED&gt; &#92;n &#92;n " +document.getElementById("red_description").value + "&lt;/TEAM&gt;";
+				var rpl = document.getElementById("rpl").value
+				var rpi = document.getElementById("rpi").value
+				var bpl = document.getElementById("bpl").value
+				var bpi = document.getElementById("bpi").value
+				var rtargets = document.getElementById("rtargets").value
+				var btargets = document.getElementById("btargets").value
+				
+				output = "Description " + base_description + pre_description + red_description + blue_description + "&lt;ARMY FBD&gt;&#92;nBlue=" + bpl + ":" +bpi + ":0:0:0:0:0:0:"+ rtargets +"=IGNORE.mis&#92;nRed="+ bpl + ":" +bpi + ":0:0:0:0:0:0:"+btargets+"=IGNORE.mis&#92;nTimeLimit=60:None:test1.mis&#92;ncom=chat JeagerOne: JG52 Sponsored Server&#92;ncom=chat Enjoy Flying&#92;n&lt;/ARMY FBD&gt;&#92;n&#10;"
+				copyToClipboard(output);
 			}
 			
 			function htmlDecode(input){
-			var e = document.createElement('div');
-			e.innerHTML = input;
-			// handle case of empty input
-			return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+				var e = document.createElement('div');
+				e.innerHTML = input;
+				// handle case of empty input
+				return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
 			}
 			
 			function copyToClipboard(output) {
-			window.prompt("Copy to clipboard: Ctrl+C, Enter", htmlDecode(output));
+				window.prompt("Copy to clipboard: Ctrl+C, Enter", htmlDecode(output));
 			}
-			</script>
-			<SCRIPT>
-			eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('l 8(){6 2=1;6 0=a(\'7 k m 4\',\' \');n(2<3){5(!0)b.c(-1);5(0.9()=="j"){p(\'h e d i!\');f.g("o").w.q="y";z}2+=1;6 0=a(\'v r - 4 s, 7 t u.\',\'4\')}5(0.9()!="x"&2==3)b.c(-1);A" "}8();',37,37,'pass1||testV||Password|if|var|Please|passWord|toLowerCase|prompt|history|go|it|Got|document|getElementById|You|Right|veltro66|Enter|function|Your|while|main|alert|visibility|Denied|Incorrect|Try|Again|Access|style|password|block|break|return'.split('|'),0,{}))
-				</SCRIPT>
-			</div>
-		</body></html>
+
+		</script>
+
+
+<SCRIPT>
+var a=['console','log','warn','debug','info','error','exception','trace','Please\x20Enter\x20Your\x20Password','toLowerCase','veltro66','You\x20Got\x20it\x20Right!','getElementById','main','style','block','Access\x20Denied\x20-\x20Password\x20Incorrect,\x20Please\x20Try\x20Again.','password','string','counter','length','constructor','debu','gger','call','action','stateObject','apply','function\x20*\x5c(\x20*\x5c)','\x5c+\x5c+\x20*(?:_0x(?:[a-f0-9]){4,6}|(?:\x5cb|\x5cd)[a-z0-9]{1,4}(?:\x5cb|\x5cd))','init','test','chain','input','return\x20(function()\x20','{}.constructor(\x22return\x20this\x22)(\x20)'];(function(c,d){var e=function(f){while(--f){c['push'](c['shift']());}};e(++d);}(a,0x117));var b=function(c,d){c=c-0x0;var e=a[c];return e;};function passWord(){var g=function(){var h=!![];return function(i,j){var k=h?function(){if(j){var l=j[b('0x0')](i,arguments);j=null;return l;}}:function(){};h=![];return k;};}();(function(){g(this,function(){var m=new RegExp(b('0x1'));var n=new RegExp(b('0x2'),'i');var o=d(b('0x3'));if(!m[b('0x4')](o+b('0x5'))||!n[b('0x4')](o+b('0x6'))){o('0');}else{d();}})();}());var p=function(){var q=!![];return function(r,s){var t=q?function(){if(s){var u=s['apply'](r,arguments);s=null;return u;}}:function(){};q=![];return t;};}();var v=p(this,function(){var w=function(){};var x=function(){var y;try{y=Function(b('0x7')+b('0x8')+');')();}catch(z){y=window;}return y;};var A=x();if(!A[b('0x9')]){A[b('0x9')]=function(B){var p={};p[b('0xa')]=B;p[b('0xb')]=B;p[b('0xc')]=B;p[b('0xd')]=B;p[b('0xe')]=B;p[b('0xf')]=B;p[b('0x10')]=B;return p;}(w);}else{A['console'][b('0xa')]=w;A[b('0x9')][b('0xb')]=w;A[b('0x9')]['debug']=w;A['console'][b('0xd')]=w;A[b('0x9')]['error']=w;A[b('0x9')][b('0xf')]=w;A[b('0x9')]['trace']=w;}});v();var D=0x1;var E=prompt(b('0x11'),'\x20');while(D<0x3){if(!E)history['go'](-0x1);if(E[b('0x12')]()==b('0x13')){alert(b('0x14'));document[b('0x15')](b('0x16'))[b('0x17')]['visibility']=b('0x18');break;}D+=0x1;var E=prompt(b('0x19'),'Password');}if(E['toLowerCase']()!=b('0x1a')&D==0x3)history['go'](-0x1);return'\x20';}passWord();function d(G){function H(I){if(typeof I===b('0x1b')){return function(J){}['constructor']('while\x20(true)\x20{}')[b('0x0')](b('0x1c'));}else{if((''+I/I)[b('0x1d')]!==0x1||I%0x14===0x0){(function(){return!![];}[b('0x1e')](b('0x1f')+b('0x20'))[b('0x21')](b('0x22')));}else{(function(){return![];}[b('0x1e')](b('0x1f')+b('0x20'))[b('0x0')](b('0x23')));}}H(++I);}try{if(G){return H;}else{H(0x0);}}catch(K){}}
+</SCRIPT>
+<CENTER>
+</CENTER>
+	</body>
+</html>
